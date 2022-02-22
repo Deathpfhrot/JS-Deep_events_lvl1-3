@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 20pt;
+  font-weight: normal;
+}
+
+section {
+  margin: 100px auto;
+  text-align: center;
+}
+
+button {
+  padding: 20px;
+  background: transparent;
+  text-shadow: 1px 1px 1px #202020;
+  font-family: "Lato", sans-serif;
+  font-size: 18pt;
+  border: 1px solid #c2e8ce;
+  color: #c2e8ce;
+}
+
+select {
+  padding: 15px 20px;
+  border: none;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 2rem;
+  outline: 0;
+}
+
+h1 {
+  line-height: 1.25;
+  margin: 1em 0 0;
+  color: gray;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+#umschalter {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#umschalter li {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 0 15px 15px 0;
+  border-radius: 18px;
+  border: 3px solid black;
+}
+
+#grauTaste {
+  background: gray;
+}
+
+#weissTaste {
+  background: white;
+}
+
+#blauTaste {
+  background: blue;
+}
+
+#gelbTaste {
+  background: yellow;
+}
+
+.section1 {
+  background-color: #d6d5d5;
+  height: 50vh;
+}
+.section1 h1 {
+  font-size: 13rem;
+  font-weight: 300;
+  color: black;
+}
+.section1 article {
+  display: flex;
+  justify-content: space-around;
+}
+.section1 article aside {
+  width: 30%;
+}
+.section1 article aside p:nth-of-type(1) {
+  padding: 1rem;
+  background-color: #1bd1f1;
+}
+.section1 article aside p:nth-of-type(2) {
+  padding: 1rem;
+  background-color: white;
+}/*# sourceMappingURL=main.css.map */

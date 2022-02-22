@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/SASS/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1>Hello</h1>
+
+    <p id="eventParagraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci recusandae excepturi consequatur saepe. Pariatur magnam, reiciendis optio vitae expedita cum asperiores iure mollitia sunt blanditiis incidunt tempore veniam maiores.</p>
+
+
+
+    <section>
+        <h3> Klickzähler </h3>
+        <button id="clickMe">Click me: 0</button>
+        <h5>Gute Praxis: kein JavaScript-Code im HTML</h5>
+    </section>
+
+
+
+
+    <select id="my-select">
+        <option value="" disabled selected>Select One</option>
+        <option value="select1">Select 1</option>
+        <option value="select2">Select 2</option>
+        <option value="select3">Select 3</option>
+        <option value="select4">Select 4</option>
+        <option value="select5">Select 5</option>
+    </select>
+
+    <p id="option-selected"></p>
+
+
+
+    <ul id="umschalter">
+        <li id="grauTaste" onclick="themeChange()"></li>
+        <li id="weissTaste" onclick="themeChange2()"></li>
+        <li id="blauTaste" onclick="themeChange3()"></li>
+        <li id="gelbTaste" onclick="themeChange4()"></li>
+    </ul>
+
+
+    <h1 id="txtColor1">Farbschema Umschalter</h1>
+
+    <p id="txtColor2">Versuche auf eine der obigen Farben zu klicken, um die Farben auf dieser Seite zu ändern! </p>
+
+    <section class="section1">
+        <h1 id="numberPressed">1</h1>
+        <article>
+            <aside>
+                <p>Key</p>
+                <p id="key">1</p>
+            </aside>
+            <aside>
+                <p>KeyCode</p>
+                <p id="keyCode">1</p>
+            </aside>
+            <aside>
+                <p>Code</p>
+                <p id="code">1</p>
+            </aside>
+        </article>
+    </section>
+
+
+    <h1>Meine dynamische Webseite</h1>
+    <p id="demo">Wähle eine Farbe:</p>
+    <p>
+        <button onclick="changeBackground('pink')">Rosa</button>
+        <button onclick="changeBackground('purple')">Lila</button>
+        <button onclick="changeBackground('orange')">Orange</button>
+    </p>
+    <p>
+        <input type="range" id="rot" value="165" min="0" max="255" onchange="changeHandle()" style="background:red"> Rot
+        <br>
+        <input type="range" id="grun" value="155" min="0" max="255" onchange="changeHandle()" style="background:green"> Grün
+        <br>
+        <input type="range" id="blau" value="145" min="0" max="255" onchange="changeHandle()" style="background:blue"> Blau
+    </p>
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/5523580bc8.js" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
