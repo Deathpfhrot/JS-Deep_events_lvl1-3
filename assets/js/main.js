@@ -88,6 +88,7 @@ let grun = document.getElementById('grun')
 let blau = document.getElementById('blau')
 let clickCounter = 0
 let sumColor = "rgb(" + rot.value + ", " + grun.value + ", " + blau.value + ")"
+let myHex = `${rot.value, grun.value, blau.value}`
 
 function changeBackground(a, b, c) {
     console.log(a, b, c);
@@ -103,15 +104,16 @@ function changeHandle() {
     let sumColor = "rgb(" + rot.value + ", " + grun.value + ", " + blau.value + ")"
 
 
-    console.log(sumColor.value);
 
-    demo.innerHTML = sumColor
+    demo.innerHTML = sumColor + " = " + rgbToHex(rot.value) + rgbToHex(grun.value) + rgbToHex(blau.value);
     document.body.style.backgroundColor = sumColor;
 }
 
-// demo.addEventListener('click', function changeBackground(a, b, c) {
-//     document.body.style.backgroundColor = a;
-//     document.body.style.backgroundColor = b;
-//     document.body.style.backgroundColor = c;
-//     demo.innerHTML = `Die Farbe wurde ${clickCounter} mal geändert!`
-// })
+
+let rgbToHex = (rgb) => {
+    let hex = Number(rgb).toString(16);
+    if (hex.length < 2) {
+        hex = "0" + hex;
+    }
+    return hex;
+};
